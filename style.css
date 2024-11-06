@@ -1,0 +1,841 @@
+@font-face{
+    font-family: gotfont;
+    src: url(game-of-thrones/Game\ of\ Thrones.ttf);
+}
+
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    overflow-x:hidden;
+    min-height: 100%;
+    width: 100%; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    box-sizing: border-box;
+}
+
+.primer-contenedor{
+    background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.6) 60% , rgba(0, 0, 0, 1)100%), url('pictures/IronThroneBackground.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 5px;
+    padding-left: 12%;
+    padding-right: 12%;
+    height: 110vh;
+    width: 100%; 
+    justify-content: center;
+    box-sizing: border-box; 
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar{
+    align-items: center;
+    margin: 0;
+    justify-content:space-between;
+    font-size: medium;
+    display: flex;
+    width: 100%;
+    z-index: 10;
+}
+.logo1{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    height: 3.7rem;
+    width: 3rem;
+}
+
+
+.lista-flexible{
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    font-family: gotfont;
+    color: white;
+    list-style-type: none;
+}
+
+.page1, .page3{
+    padding: 1rem;
+    display: inline;
+    cursor: pointer;
+}
+.page1:hover, .page3:hover {
+    color: red;
+    transform: translateY(-3px);
+} 
+
+.contenido-inicial{
+    top: 3%;
+    color: white;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+    gap: 1rem;
+    box-sizing: border-box;
+    
+}
+.texto-inicial{
+    width: 50%;
+    padding: 0;
+}
+.frase{
+    font-size:x-large;
+    padding-top:1% ;
+    padding-bottom: 0;
+}
+.tittle{
+    font-size:4.5rem;
+    font-family: gotfont;
+    color:white;
+    max-width: 450px;
+    margin-top:2rem;
+    margin-bottom: 0;
+    text-align: start;
+    padding-bottom: 0.5rem;
+}
+
+.informacion{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: left;
+    max-width: 450px;
+    padding-bottom: 1rem;
+}
+
+.button-info1{
+    color: white;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Times New Roman'; 
+    margin: 0;
+    margin: 0.5rem 25%;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.25rem;
+    border: 1px solid #fff;
+    font-size: 1.2rem;
+    border-color: rgba(255, 255, 219, 0.684);
+    background-color: rgba(0, 0, 0, 0.214);
+}
+.button-info1:hover{
+    color: #b08a5a;
+    border-color: #b08a5a;
+}
+
+.eddardStarkTrono{
+    display: flex;
+    height: auto;
+    justify-content:center;
+    width: 45%;
+}
+  
+
+
+.segundo-contenedor{
+    display: flex;
+    flex-direction: row;
+    background-image: radial-gradient(circle at center, rgba(0,0,0, 0.4) 30%, rgba(0, 0, 0, 0.7) 60%, rgb(0, 0, 1,0.9) 100%),url(pictures/mapaWesteros2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100%;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+}
+
+.daenerys{
+    padding-left:0%;
+    padding-right: 5%;
+    padding-bottom: 0%;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: flex-start;
+    bottom: 0; 
+    left: 0; 
+}
+
+.contenido2{
+    width: 50%;
+    height: 100%;
+    color: white;
+    display: flex;
+    margin: 0px;
+    padding-right: 10%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.texto-inicial2{
+    width: 80%;
+    height: 20%;
+}
+
+.frase2{
+    color: red;
+    font-size:larger;
+    padding-top: 1.5rem;
+    margin: 0;
+}
+.tittle2{
+    font-size:2rem;
+    font-family: gotfont;
+    color:white;
+    margin-top: 1rem;
+}
+
+.divider {
+    width: 100%; 
+    border: none;
+    border-top:1.5px solid #adadad; 
+    margin-right: 18%;
+    margin-left: 12%;
+}
+
+.listado {
+    list-style-type: none;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    padding-left: 10%;
+    margin: 0;
+    width: 100%;
+}
+
+.listado li {
+    padding: 0;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1.5px solid #adadad;
+}
+.subcontenido{
+    margin: 1rem;
+    border-radius: 0.25rem;
+    background-color: #372a1680;
+}
+
+.subtittle {
+    font-family: gotfont;
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+}
+
+.subtittle:hover{
+    transform: translateY(-3px);
+}
+
+.subinfo {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 1.5rem;
+    color: #b08a5a;
+    margin-left: auto;
+}
+
+.button-info2 {
+    color: white;
+
+    font-family: 'Times New Roman'; 
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-left: 12%;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.25rem;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    border-color: rgba(255, 255, 219, 0.684);
+    background-color: rgba(0, 0, 0, 0.214);
+}
+
+.button-info2:hover{
+    color: #b08a5a;
+    border: 1px solid #b08a5a;
+}
+
+.tercer-contenedor{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    background-image: radial-gradient(circle at center, rgba(0,0,0, 0.5) 30%, rgba(0, 0, 0, 0.8) 60%, rgb(0, 0, 1,1) 100%),url(pictures/fondomapa1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    max-height: 50%;
+}
+.subcontenedor3{
+    display: flex;
+    background-color: rgb(235, 180, 40);
+    box-sizing: border-box;
+    margin: 10%;
+    margin-left: 0;
+    max-height: 10%;
+    width: 90%;
+    /* border-right:10px solid rgba(129, 98, 22, 0.744);
+    border-bottom:10px solid rgba(129, 98, 22, 0.744); */
+}
+.imagen-wrapper{
+    background-image: url('pictures/banderascasas.png');
+    width: 40%;
+    overflow: hidden;
+    display: flex;
+    background-size: 100% 105%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.contenido3{
+    width: 60%;
+    padding:5%;
+    color: rgb(50, 46, 46);
+
+}
+.frase3{
+    color: crimson;
+    font-size: larger;
+}
+.tittle3{
+    font-size: 1.6rem;
+    font-family: gotfont;
+}
+.info3{
+    font-size: 1.2rem;
+}
+.button-info3{
+    font-family: 'Times New Roman'; 
+    align-content: center;
+    margin: 0;
+    padding: 0.8rem 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    border-color: rgba(62, 62, 62, 0.684);
+    background-color: rgba(132, 132, 132, 0.214);
+}
+.button-info3:hover{
+    color: #b08a5a;
+    border: 1px solid #b08a5a;
+}
+.moreinfo{
+    color: white;
+    text-decoration: none;
+}
+.moreinfo:hover{
+    color: #b08a5a;
+}
+
+.cuarto-contenedor {
+    text-align: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #1e1e1e;
+    color: #fff;
+    background-image: radial-gradient(circle at center, rgba(15, 15, 15, 0.5) 30%, rgba(35, 35, 35, 0.8) 60%, rgb(0, 0, 1,1) 100%),url(pictures/fondocasassimbolos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.frase4 {
+    color: #d4a373;
+    font-size: larger;
+    margin: 0;
+}
+
+.tittle4 {
+    font-family: gotfont;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    margin-top: 0.5rem;
+}
+
+.contenido4 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    font-size: 1rem;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+
+.box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 1rem;
+    text-align: center;
+    background-color: #2c2c2c;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.divider {
+    width: 50%;
+    margin: 0.5rem auto;
+    border: none;
+    border-top: 1px solid #adadad;
+}
+
+.ref {
+    color: #d4a373;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.ref:hover {
+    text-decoration: underline;
+    color: #cccccc;
+}
+
+.quinto-contenedor{
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.1) 60% , rgba(0, 0, 0, 0.1)100%), url('pictures/fondoelmuro.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    max-height: auto;
+    padding: 12%;
+    justify-content: center;
+    align-items:center;
+}
+
+.tittl5{
+    color: white;
+    padding: 0% 10%;
+    font-size: 2rem;
+    font-family:gotfont;
+    text-align: center;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.input1{
+    margin: 1rem;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    flex-grow: 1;
+    max-width: 300px;
+}
+.button-send{
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0.25rem;
+    cursor: pointer;
+ 
+}
+.button-send:hover{
+    color: #b08a5a;
+    border: 1px solid #b08a5a;
+}
+
+
+
+.sexto-contenedor {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background: radial-gradient(circle at center,  rgb(12, 12, 12) 30%, rgba(34, 34, 34, 0.642) 60%, rgba(35, 35, 35, 0.851) 100%);
+    color: #fff;    
+}
+.housestark{
+    align-items: center;
+    width: 130px;
+    height: 100px;
+}
+.img-wrapper2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 320px;
+    background-image: radial-gradient(circle at center,  rgba(15, 15, 15, 0) 30%, rgba(25, 25, 25, 0) 60%, rgb(0, 0, 1,0) 100%), url('pictures/housestarkfondo.webp');
+    /* background-size:hidden;  */
+    background-size: 90% 140%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.social-icons{
+    padding-top: 10%;
+    padding-left: 40%;
+    justify-content: center;
+}
+.logos{
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+}
+.logo{
+    padding: 1rem;
+    width: 1rem;
+    height: 1rem;
+}
+.contenido6{
+    padding-right: 10%;
+    width: 50%;
+    flex-direction: row;
+    display: flex;
+    font-size: 1.3rem;
+    color: rgb(192, 192, 192);
+}
+.listado2{
+    text-align: left;
+    padding: 5%;
+}
+.bulletlist1{
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer{
+    border-top: 0.2px solid rgb(161, 161, 161);
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #111;
+    color: #777;
+    font-size: 1.2rem;
+}
+.foot-text {
+    justify-content: left;
+    padding: 1rem;
+}
+.foot-text2{
+    justify-content: right;
+    padding: 1rem;
+} 
+
+@media (max-width:760px){
+    body{
+        margin:0;
+        padding: 0;
+        background-color: black;
+        display: flex;
+        min-height: 100vh;
+        width: 100vw; 
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .primer-contenedor{
+        /* display: flex; */
+        flex-direction: column;
+        background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.6) 60% , rgba(0, 0, 0, 1)100%), url('pictures/IronThroneBackground.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 100%;
+        width: 100%;
+
+    }
+    .navbar{
+        top: 0;
+        margin: 0;
+        padding: 0;
+        justify-content:space-between;
+        display: flex;
+        width: 100%;
+    }
+    .logo1{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: flex-start;
+        align-content: center;
+        height: 3.7rem;
+        width: 3rem;
+    }
+    .lista-flexible{
+        font-size: small;
+        margin: 0;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-items: center;
+        font-family: gotfont;
+        color: white;
+        list-style-type: none;
+    }
+
+    .contenido-inicial{
+        top: 0;
+        color: white;
+        height: 100%;
+        width: 100%;
+        /* display: flex; */
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .texto-inicial{
+        
+        width: 100%;
+        display: inline;
+        align-items: center;
+        font-size: 1.5rem;
+        width: 80%; 
+    }
+
+    .frase{
+        align-items: center;
+        font-size: large;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .tittle{
+        align-items: center;
+        font-size: 2rem;
+        font-family: gotfont;
+        color: white;
+        text-align: center; 
+        margin: 1rem 0;
+    }
+
+    .informacion{
+        font-size: 1rem;
+        text-align: center;
+        margin: 0;
+        padding: 1rem;
+        padding-top: 0;
+    }
+
+    .eddardStarkTrono {
+        flex-wrap: wrap;
+    } 
+    .button-info1{
+        font-size: 1rem;
+    }
+
+    .segundo-contenedor{
+        align-items: center;
+        
+        height: 100%;
+        width: 100%;
+    }
+    .daenerys{
+        justify-content: flex-start;
+        width: 70vw;
+        margin: 0;
+        padding: 0;
+    }
+    .contenido2{
+        width: 100%;
+        height: 60%;
+        padding: 5%;
+        padding-top: 0;
+        color: white;
+        display: flex;
+        margin: 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .texto-inicial2{
+        width: 100%;
+        padding: 5%;
+        justify-content: center;
+    }
+    
+    .frase2{
+        color: red;
+        font-size:larger;
+        padding: 1rem 0%;
+        padding-bottom: 0;
+        margin: 0;
+    }
+    .tittle2{
+        font-size:2rem;
+        font-family: gotfont;
+        color:white;
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+    }
+    
+    .divider {
+        width: 100%; 
+        border: none;
+        border-top:1.5px solid #adadad; 
+        margin-right: 18%;
+        margin-left: 12%;
+    }
+    
+    
+    .listado {
+        width: 80%;
+        justify-content: center;
+    }
+     
+
+
+    .tercer-contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .subcontenedor3{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .imagen-wrapper{
+
+        padding: 40%;
+        height: 50%;
+    }
+    
+    .contenido3{
+        width: 100%;
+        padding:5%;
+        color: rgb(50, 46, 46);
+    
+    }
+
+
+    .contenido4{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:1rem;
+        display: flex;
+        padding: 0;
+    }
+    .box{
+        width: 50vw;
+    }
+    .frase{
+        font-size: 1rem;
+    }
+    .tittle4{
+        font-size: 1rem;
+    }
+    .subtitulo{
+        font-size: 1rem;
+    }
+    .ref{
+        font-size: 0.8rem;
+    }
+
+    .tittl5{
+        font-size: 1.5rem;
+    }
+    .footer{
+        font-size: 0.8rem;
+    }
+
+
+
+    .sexto-contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img-wrapper2{
+        background-size: 90% 140%;
+        justify-content: center; 
+        align-items: center;
+        width: 100%; 
+        height: 100%; 
+    }
+    .social-icons{
+        padding: 10% 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    .housestark{
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        padding: 1rem;
+        width: 1rem;
+        height: 1rem;
+
+    }
+    .contenido6{
+        width: auto;
+        padding: 2rem;
+    }
+
+}
